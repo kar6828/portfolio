@@ -4,8 +4,83 @@
         <title>Kendall's Model Site</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
-
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #242323;
+            color: white
+          
+        }
+      
+      /* unvisited link */
+a:link {
+  color: #77aaff;}
+  
+  /*visited link */
+  a:link {
+  color: #77aaff;}
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+                   
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        section h1 {
+        text-align: center
+        }
+        .main {
+            padding: 20px;
+            background: #242323;
+            margin-top: 20px;
+           
+           
+        }
+        .section {
+            margin-bottom: 20px;
+          
+        }
+        .section h2 {
+            border-bottom: 2px solid #77aaff;
+            padding-bottom: 10px;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+        }
+        nav {
+        list-style-type: none;
+        margin: 3;
+        padding: 0;
+        text-align: center;
+        }
+        
+        li {
+        display: inline;
+        padding: 15px;
+        }
+        
+     
+        
+    </style>
+        
         <!--2021-02-02 ebb: The code inside the <head> element is not for display in the web browser, but it holds important information about the website's contents.
     The text inside the <title> element appears in the top tab of a web browser. The meta elements give instructions for how the browser window will behave, 
     and the <link> element pulls in a CSS stylesheet from another (external) file you'll save in your website directory. 
@@ -13,7 +88,9 @@
     </head>
     <body>
         <!--ebb: Here inside the <body> element is where the code for the visible display of a website appears. -->
-        <h1>Kendall's introDH Home</h1>
+        <header>
+        <h1>Home</h1>
+        </header>
         <!-- ebb: I've commented out some code for a super simple site navigation menu. 
             For the links to work, we'll need a <p> element to wrap around the contents:
         <nav class="menuA">
@@ -26,23 +103,26 @@
         <!--ebb: Site Navigation Menu Code B: You can decide if you want this to be a horizontal or vertical arrangement, and make the bullets disappear using CSS.
      See https://www.w3schools.com/css/css_navbar.asp
       -->
+ 
+
         <nav>
-            <figure> <img class="photo" src="images/cockatoo.jpg" alt="white cockatoo"/> <img src="https://www.psu.edu/psu-edu-assets/images/image-gallery/shrine1-intro.gif" alt="psu lion"/>
-           <figcaption>"I added a new caption here!"</figcaption></figure>
+           
             <ul class="menuB"> 
                 <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume (empty)</a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li><a href="about.html">About Me</a></li>
-                <li><a href="essays.html">DIGIT 100 Essays (empty)</a></li>
+                <li><a href="galler.html">Gallery</a></li>
             </ul>
-                
+         
         </nav>
-        
+       
+        <div class="container">
+            <div class="main">
+                <div class="section">
+       </div>
       <section>  
           <h1>Experimenting with HTML links: Absolute and Relative links</h1>
         <p>Welcome to my practice website on GitHub Pages! I am using oXygen to mess with the code on here. You'll find below some detailed instructions as to how I did what I did.</p>
-          
-          <iframe src="https://embed.kumu.io/42ebb35ea1873e6733de2cc224d11404" width="1500" height="900" > </iframe> 
       
       
         <p>Here is a sample link to another website that's not in this site. This link holds an
@@ -108,17 +188,7 @@
             and style them all the same way, and I put that code in a separate file so it can handle styling the same way across all the pages on my
             website. I link that CSS stylesheet to my HTML files up in the <code>head</code> element. <em>Can you find the CSS <code>link</code> line in this file?</em></p>
             
-            <figure class="photoGallery">
-                <img class="photo" src="images/littleNewt.jpg" alt="pet Japanese firebelly newt" />
-                <figcaption>Photo of Dr. B's pet firebelly newt.</figcaption>
-            </figure>
-            <img src="https://www.psu.edu/psu-edu-assets/images/image-gallery/shrine1-intro.gif" alt="an absolute image file reference to a lion on the PSU website"/>
-            <figure>
-                <img src="images/cockatoo.jpg" alt="Dr. B's firebelly newt image" />
-                <figcaption>Image of a cockatoo from Australia or New Zealand. Source:<a
-                    href="http://nzbirdsonline.org.nz/species/sulphur-crested-cockatoo"> New Zealand
-                    Birds Online</a>. </figcaption>
-            </figure>
+            
                
         </section>
     </body>

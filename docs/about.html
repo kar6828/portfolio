@@ -4,7 +4,74 @@
         <title>About Me</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
+  
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #242323;
+            color: white;     
+        }
+        
+        /* unvisited link */
+a:link {
+  color: #77aaff;}
+  
+  /*visited link */
+  a:link {
+  color: #77aaff;}
+  
+  
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+           
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        .main {
+            padding: 20px;
+            background: #242323;
+            margin-top: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #77aaff;
+            padding-bottom: 10px;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+        }
+        nav {
+        list-style-type: none;
+        margin: 3;
+        padding: 0;
+        text-align: center;
+        }
+        
+        li {
+        display: inline;
+        padding: 15px;
+        }
+    </style>
 
         <!--2021-02-02 ebb: The code inside the <head> element is not for display in the web browser, but it holds important information about the website's contents.
     The text inside the <title> element appears in the top tab of a web browser. The meta elements give instructions for how the browser window will behave, 
@@ -13,7 +80,9 @@
     </head>
     <body>
         <!--ebb: Here inside the <body> element is where the code for the visible display of a website appears. -->
+        <header>
         <h1>About Me</h1>
+        </header>
         <!-- ebb: I've commented out some code for a super simple site navigation menu. 
             For the links to work, we'll need a <p> element to wrap around the contents:
         <nav class="menuA">
@@ -29,9 +98,9 @@
         <nav>
             <ul class="menuB"> 
                 <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume (empty)</a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li><a href="about.html">About Me</a></li>
-                <li><a href="essays.html">DIGIT 100 Essays (empty)</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>   
         </nav>
         
